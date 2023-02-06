@@ -1,14 +1,17 @@
 <template>
   <mountedCompo></mountedCompo>
+  <watchCompo></watchCompo>
 </template>
 
 <script>
-import mountedCompo from './components/mountedCompo.vue'
+import mountedCompo from './components/mountedCompo.vue';
+import watchCompo from './components/watchCompo.vue';
 
 export default {
   name: 'App',
   components: {
-    mountedCompo
+    mountedCompo,
+    watchCompo
 
   }
 }
