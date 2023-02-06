@@ -1,7 +1,8 @@
 <template>
   <mountedCompo></mountedCompo>
   <watchCompo></watchCompo>
-  <childCop v-bind:msg="greeting"></childCop>
+  <childCop v-bind:msg="greeting" @response="(cmsg) => childMsg = cmsg"></childCop>
+  <p>{{ childMsg }}</p>
 </template>
 
 <script>
@@ -19,7 +20,8 @@ export default {
   },
   data(){
     return{
-      greeting : '부모 컴포넌트로 부터 prop 전달'
+      greeting : '부모 컴포넌트로 부터 prop 전달',
+      childMsg : '아직 자식 emit를 받지 못했어요'
     }
   }
 }

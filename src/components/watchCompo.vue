@@ -24,6 +24,7 @@ export default {
         `https://jsonplaceholder.typicode.com/todos/${this.todoId}`
       )
       this.todoData = await res.json()
+      console.log(res)
     }
 
   },
