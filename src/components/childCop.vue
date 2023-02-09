@@ -10,7 +10,7 @@ export default {
   emits:['response'],
   created(){
     //인자와 함께 emit
-    this.$emit('response','자식 컴포넌트 부터 emit 발송')
+    this.$emit('response','자식 컴포넌트 부터 emit 발송 완료')
   },
   props:{
     msg: String
